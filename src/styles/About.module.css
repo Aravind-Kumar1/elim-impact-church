@@ -1,0 +1,147 @@
+.aboutSection {
+  padding: 70px 24px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003060;
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.sectionHeading::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3.5px;
+  background-color: #ff8000;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 48px;
+}
+
+.imageWrapper {
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 48, 96, 0.12);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.aboutImage:hover {
+  transform: scale(1.02);
+}
+
+.aboutText {
+  flex: 1.1;
+}
+
+.aboutBox {
+  padding: 36px 32px;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(0, 48, 96, 0.04);
+}
+
+.boxHeading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003060;
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutPara {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.memberBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1.5px solid #ff8000;
+  box-shadow: 0 4px 12px rgba(255, 128, 0, 0.1);
+}
+
+.memberText {
+  font-size: 0.95rem;
+  color: #003060;
+  font-weight: 600;
+}
+
+.number {
+  font-size: 1.15rem;
+  color: #ff8000;
+  font-weight: 800;
+}
+
+/* Tablet & Mobile Responsive */
+@media (max-width: 960px) {
+  .aboutSection {
+    padding: 50px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+
+  .aboutBox {
+    padding: 28px 20px;
+  }
+
+  .boxHeading {
+    font-size: 1.5rem;
+  }
+
+  .memberBadge {
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeading {
+    font-size: 1.75rem;
+  }
+
+  .aboutPara {
+    font-size: 0.95rem;
+  }
+}

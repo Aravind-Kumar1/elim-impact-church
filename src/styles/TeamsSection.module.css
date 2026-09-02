@@ -1,0 +1,150 @@
+.teamsSection {
+  background: #ffffff;
+  padding: 70px 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #003060;
+  font-weight: 700;
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3.5px;
+  background: #ff8000;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.sectionTagline {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 45px;
+  font-style: italic;
+}
+
+.carouselWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carouselContainer {
+  flex: 1;
+  max-width: 520px;
+  height: 360px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 48, 96, 0.1);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carouselImageCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carouselImageCard.active {
+  opacity: 1;
+}
+
+.carouselImageItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teamInfoWrapper {
+  flex: 1.1;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 36px 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamHeading {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  color: #003060;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.teamSummary p {
+  font-size: 1.02rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.teamIndicators {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.activeIndicator {
+  background-color: #ff8000;
+  width: 26px;
+  border-radius: 10px;
+}
+
+@media (max-width: 960px) {
+  .teamsSection {
+    padding: 50px 16px;
+  }
+
+  .carouselWrapper {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .carouselContainer,
+  .teamInfoWrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .carouselContainer {
+    height: 300px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}

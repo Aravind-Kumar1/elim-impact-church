@@ -1,0 +1,349 @@
+.donatePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+.mainContent {
+  flex: 1 0 auto;
+  padding-top: 75px; /* Offset for fixed header */
+  width: 100%;
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #002244 0%, #003366 50%, #004d80 100%);
+  color: #ffffff;
+  padding: 60px 24px 70px;
+  text-align: center;
+  position: relative;
+}
+
+.heroContent {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgba(255, 128, 0, 0.2);
+  border: 1px solid rgba(255, 128, 0, 0.5);
+  color: #ffb366;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.message {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  margin-bottom: 30px;
+  max-width: 720px;
+}
+
+.verseBox {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #ff8000;
+  padding: 20px 28px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  max-width: 680px;
+  text-align: left;
+}
+
+.verseText {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+.verseRef {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffb366;
+  display: block;
+  text-align: right;
+}
+
+/* Causes Grid Section */
+.causesSection {
+  max-width: 1200px;
+  margin: -35px auto 60px;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003060;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+.causesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.causeCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 48, 96, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.causeCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 48, 96, 0.12);
+  border-color: #cbd5e1;
+}
+
+.causeIconWrapper {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #fff4ec 0%, #ffe0cc 100%);
+  color: #ff8000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.causeTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #003060;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.causeDescription {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+/* Giving Details Section */
+.givingDetailsSection {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 0 24px;
+}
+
+.detailsCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 48, 96, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.detailsHeader {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.bankIconWrapper {
+  width: 52px;
+  height: 52px;
+  background-color: #003060;
+  color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.detailsTitle {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #003060;
+  margin-bottom: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.detailsSubtitle {
+  font-size: 0.92rem;
+  color: #64748b;
+}
+
+.bankInfoGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #edf2f7;
+}
+
+.infoLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.infoValueWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.infoValue {
+  font-size: 0.98rem;
+  color: #003060;
+  font-weight: 600;
+}
+
+.copyBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #003060;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copyBtn:hover {
+  background-color: #003060;
+  color: #ffffff;
+  border-color: #003060;
+}
+
+.copiedIcon {
+  color: #10b981;
+}
+
+.noteBox {
+  background-color: #fff8f1;
+  border: 1px solid #ffe4cc;
+  border-radius: 10px;
+  padding: 16px 20px;
+  color: #994700;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 960px) {
+  .causesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 40px 16px 50px;
+  }
+
+  .heading {
+    font-size: 1.85rem;
+  }
+
+  .message {
+    font-size: 0.98rem;
+  }
+
+  .causesSection {
+    margin-top: -25px;
+    margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  .causesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .givingDetailsSection {
+    margin-bottom: 50px;
+    padding: 0 16px;
+  }
+
+  .detailsCard {
+    padding: 24px 16px;
+  }
+
+  .detailsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .infoValueWrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

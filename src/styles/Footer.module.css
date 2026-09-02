@@ -1,0 +1,200 @@
+/* Global Footer Styles */
+.footer {
+  background: linear-gradient(180deg, #002244 0%, #00172e 100%);
+  color: #f1f5f9;
+  padding: 60px 0 25px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.footerContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 1.2fr 1fr;
+  gap: 40px;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footerLogoImg {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.footerChurchName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.footerAboutText {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.sectionHeading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionHeading::after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #ff8000;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLinks li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footerLinks li a:hover {
+  color: #ff8000;
+  transform: translateX(4px);
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.contactIcon {
+  color: #ff8000;
+  font-size: 1rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.contactList a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  word-break: break-word;
+}
+
+.contactList a:hover {
+  color: #ff8000;
+}
+
+.socialText {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.footerSocialIcons {
+  display: flex;
+  gap: 12px;
+}
+
+.footerSocialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.footerSocialIcons a:hover {
+  background-color: #ff8000;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 128, 0, 0.35);
+}
+
+.footerCopyright {
+  max-width: 1280px;
+  margin: 45px auto 0;
+  padding: 20px 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Tablet View (max-width: 960px) */
+@media (max-width: 960px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    padding: 0 20px;
+  }
+}
+
+/* Mobile View (max-width: 600px) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 45px 0 20px;
+  }
+
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 16px;
+  }
+
+  .footerCopyright {
+    margin-top: 30px;
+    font-size: 0.78rem;
+  }
+}

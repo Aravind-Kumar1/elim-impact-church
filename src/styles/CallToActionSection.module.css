@@ -1,0 +1,93 @@
+.callToActionSection {
+  background: linear-gradient(135deg, #002244 0%, #003366 50%, #004d80 100%);
+  color: #ffffff;
+  padding: 65px 24px;
+  text-align: center;
+  border-radius: 18px;
+  max-width: 1200px;
+  margin: 30px auto 60px;
+  box-shadow: 0 12px 36px rgba(0, 48, 96, 0.15);
+}
+
+.callToActionTitle {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.callToActionTagline {
+  font-size: 1.15rem;
+  color: #e2e8f0;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #ff8000, #ff9933);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(255, 128, 0, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(255, 128, 0, 0.35);
+}
+
+.ctaButton.secondary {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  box-shadow: none;
+}
+
+.ctaButton.secondary:hover {
+  background: #ffffff;
+  color: #003060;
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .callToActionSection {
+    padding: 45px 20px;
+    margin: 20px 16px 40px;
+    border-radius: 14px;
+  }
+
+  .callToActionTitle {
+    font-size: 1.85rem;
+  }
+
+  .callToActionTagline {
+    font-size: 1rem;
+  }
+
+  .buttonWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctaButton {
+    width: 100%;
+    max-width: 260px;
+  }
+}
