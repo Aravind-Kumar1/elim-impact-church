@@ -7,6 +7,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* Favicons */}
+          <link rel="icon" href="/logo.jpg" type="image/jpeg" />
+          <link rel="icon" href="/logo.png" type="image/png" />
+          <link rel="apple-touch-icon" href="/logo.png" />
           {/* FontAwesome CDN */}
           <link
             rel="stylesheet"

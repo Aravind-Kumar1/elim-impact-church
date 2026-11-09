@@ -44,7 +44,7 @@ const Header = () => {
       <div className={styles.headerContainer}>
         <div className={styles.logo}>
           <Link href="/" className={styles.logoLink} onClick={closeMenu}>
-            <img src="/logo.jpg" alt="Church Logo" className={styles.logoImage} />
+            <img src="/logo.jpg?v=2" alt="Church Logo" className={styles.logoImage} />
             <div className={styles.logoTextContainer}>
               <span className={styles.logoText}>ELIM</span>
               <span className={styles.subtitle}>Emmanuel Living Impact Mission</span>

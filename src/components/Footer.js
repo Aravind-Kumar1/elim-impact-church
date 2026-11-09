@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Church Info */}
         <div className={styles.footerSection}>
           <div className={styles.footerLogo}>
-            <img src="/logo.jpg" alt="ELIM Church Logo" className={styles.footerLogoImg} />
+            <img src="/logo.jpg?v=2" alt="ELIM Church Logo" className={styles.footerLogoImg} />
             <h3 className={styles.footerChurchName}>ELIM CHURCH</h3>
           </div>
           <p className={styles.footerAboutText}>
