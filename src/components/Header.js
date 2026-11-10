@@ -8,6 +8,7 @@ import styles from '../styles/Header.module.css';
 const Header = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef(null);
   const menuIconRef = useRef(null);
 
@@ -39,15 +40,21 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.headerContainer}>
         <div className={styles.logo}>
           <Link href="/" className={styles.logoLink} onClick={closeMenu}>
-            <img src="/logo.jpg?v=2" alt="Church Logo" className={styles.logoImage} />
+            <img src="/elim_logo.jpg" alt="Church Logo" className={styles.logoImage} />
             <div className={styles.logoTextContainer}>
               <span className={styles.logoText}>ELIM</span>
-              <span className={styles.subtitle}>Emmanuel Living Impact Mission</span>
+              <span className={styles.subtitle}>Emmanuel Living Integrity Mission</span>
             </div>
           </Link>
         </div>

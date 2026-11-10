@@ -8,9 +8,9 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Favicons */}
-          <link rel="icon" href="/logo.jpg" type="image/jpeg" />
+          <link rel="icon" href="/elim_logo.jpg" type="image/jpeg" />
           <link rel="icon" href="/logo.png" type="image/png" />
-          <link rel="apple-touch-icon" href="/logo.png" />
+          <link rel="apple-touch-icon" href="/elim_logo.jpg" />
           {/* FontAwesome CDN */}
           <link
             rel="stylesheet"

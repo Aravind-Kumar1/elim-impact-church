@@ -7,7 +7,7 @@ const ContactUs = () => {
   const [showShareOptions, setShowShareOptions] = useState(false);
 
   const handleGetDirections = () => {
-    const destination = 'Emmanuel Living Impact Mission, Film Nagar, Hyderabad, India';
+    const destination = 'Emmanuel Living Integrity Mission, Film Nagar, Hyderabad, India';
     const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
     window.open(directionsUrl, '_blank');
   };
@@ -16,7 +16,7 @@ const ContactUs = () => {
     if (navigator.share) {
       navigator.share({
         title: 'ELIM Church',
-        text: 'Join us at Emmanuel Living Impact Mission (ELIM)!',
+        text: 'Join us at Emmanuel Living Integrity Mission (ELIM)!',
         url: window.location.origin
       }).catch(() => {
         setShowShareOptions(true);

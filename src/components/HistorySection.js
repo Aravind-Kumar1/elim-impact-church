@@ -58,7 +58,7 @@ const HistorySection = () => {
         <div className={styles.textCard}>
           <h3>Our Journey</h3>
           <p>
-            The journey of Emmanuel Living Impact Mission (ELIM) began in 1996
+            The journey of Emmanuel Living Integrity Mission (ELIM) began in 1996
             at Film Nagar with a small but determined group of believers. Through
             unwavering dedication, hard work, and prayer, we built a strong community.
           </p>

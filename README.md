@@ -1,10 +1,10 @@
-# Emmanuel Living Impact Mission (ELIM) - Church Website  
+# Emmanuel Living Integrity Mission (ELIM) - Church Website  
 
-This is a **Next.js** project developed for **Emmanuel Living Impact Mission (ELIM)**, designed to provide a seamless user experience with optimized performance and responsiveness.  
+This is a **Next.js** project developed for **Emmanuel Living Integrity Mission (ELIM)**, designed to provide a seamless user experience with optimized performance and responsiveness.  
 
 ![ELIM Church Website Thumbnail](public/elim-thumbnail.png)  
 
-**Emmanuel Living Impact Mission (ELIM) | Next.js, CSS Modules, EmailJS**  
+**Emmanuel Living Integrity Mission (ELIM) | Next.js, CSS Modules, EmailJS**  
 📅 **Nov 2024 – Feb 2025**  
 🛠 **Role:** Frontend Developer - Freelancer - https://elimimpact.com/  
 

@@ -47,7 +47,7 @@ const Donate = () => {
             <span className={styles.badge}>Generosity & Faith</span>
             <h1 className={styles.heading}>Make a Meaningful Difference</h1>
             <p className={styles.message}>
-              Your faithful giving enables Emmanuel Living Impact Mission to serve our community,
+              Your faithful giving enables Emmanuel Living Integrity Mission to serve our community,
               strengthen families, and bring the transformational love of Christ to everyone.
             </p>
             <div className={styles.verseBox}>
@@ -95,10 +95,10 @@ const Donate = () => {
               <div className={styles.infoRow}>
                 <span className={styles.infoLabel}>Account Name</span>
                 <div className={styles.infoValueWrap}>
-                  <strong className={styles.infoValue}>Emmanuel Living Impact Mission</strong>
+                  <strong className={styles.infoValue}>Emmanuel Living Integrity Mission</strong>
                   <button
                     className={styles.copyBtn}
-                    onClick={() => handleCopy('Emmanuel Living Impact Mission', 'name')}
+                    onClick={() => handleCopy('Emmanuel Living Integrity Mission', 'name')}
                     title="Copy Account Name"
                   >
                     {copiedField === 'name' ? <FaCheck className={styles.copiedIcon} /> : <FaCopy />}

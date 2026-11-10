@@ -21,7 +21,7 @@ const About = () => {
           <div className={styles.aboutBox}>
             <h3 className={styles.boxHeading}>Welcome to ELIM Family</h3>
             <p className={styles.aboutPara}>
-              At Emmanuel Living Impact Mission (ELIM), we are a vibrant family committed to spreading God's love, hope, and faith to our community. We believe in living with purpose, integrity, and active service, creating a welcoming spiritual home for everyone.
+              At Emmanuel Living Integrity Mission (ELIM), we are a vibrant family committed to spreading God's love, hope, and faith to our community. We believe in living with purpose, integrity, and active service, creating a welcoming spiritual home for everyone.
             </p>
             <div className={styles.memberBadge}>
               <span className={styles.memberText}>We are a growing family of</span>

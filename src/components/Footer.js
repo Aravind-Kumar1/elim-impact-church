@@ -10,11 +10,11 @@ const Footer = () => {
         {/* Church Info */}
         <div className={styles.footerSection}>
           <div className={styles.footerLogo}>
-            <img src="/logo.jpg?v=2" alt="ELIM Church Logo" className={styles.footerLogoImg} />
+            <img src="/elim_logo.jpg" alt="ELIM Church Logo" className={styles.footerLogoImg} />
             <h3 className={styles.footerChurchName}>ELIM CHURCH</h3>
           </div>
           <p className={styles.footerAboutText}>
-            Emmanuel Living Impact Mission is a Christ-centered community dedicated to spreading God's love, hope, and salvation to all people.
+            Emmanuel Living Integrity Mission is a Christ-centered community dedicated to spreading God's love, hope, and salvation to all people.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className={styles.footerCopyright}>
-        <p>&copy; {new Date().getFullYear()} Emmanuel Living Impact Mission (ELIM). All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Emmanuel Living Integrity Mission (ELIM). All Rights Reserved.</p>
       </div>
     </footer>
   );
